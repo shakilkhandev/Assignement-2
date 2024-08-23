@@ -3,7 +3,10 @@
 
    function vowelCount($item){  //declaring function to count vowels
 
-           $vowels = ['a', 'e', 'i', 'o', 'u'];      //declaring the vowels.
+           $vowels = ['a','e', 'i', 'o','u','A','E','I','O','U']; //declaring the vowels (UPPERCASE AND LOWERCASE).
+            
+           //note:alternate:  by converting the input string to lowercase by string method  uppercase letters can be avoided.
+
            $count = 0 ;                             //count variable declared store the number of vowel if there is. 
            
            foreach (str_split($item) as $letter ) {

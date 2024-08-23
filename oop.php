@@ -55,7 +55,7 @@
 
     public function borrowBook($book){ //Note: this is a object not the regular variable 
          if ($book->borrowBook()) {
-            echo $this->getName() . " borrowed  " . $book->getTitle() . " \n" ;
+            echo $this->getName() . " borrowed '" . $book->getTitle() . "'\n" ;
          }
          else " No copies available for ' ".$book->getTitlee();
     }

@@ -42,4 +42,4 @@
     
     
     echo PHP_EOL;
-  }
+  };

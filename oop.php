@@ -1,9 +1,9 @@
 <?php 
-  
-       // I have kept the template of the question by comment out,may be later it will help & increase readability, if i work on  .
-      //Shakil Khan
-     //Email:Shakilkhanfv@gmail.com 
-    //Asignment-2 
+     // *** Note : line 88 and 92 commented  that show who borrowed is commented for output look likes the same mentioned on the question.
+    // I have kept the template of the question by comment out,may be later it will help & increase readability, if i work on  .
+   //Shakil Khan
+  //Email:Shakilkhanfv@gmail.com 
+ //Asignment-2 
 
 
 
@@ -84,9 +84,13 @@
     
     public function borrowBook($book){ //Note: this is a object not the regular variable 
          if ($book->borrowBook()) {
-            echo $this->getName() . " borrowed '" . $book->getTitle() . "'\n" ;
+            //commentout to output look the same
+           // echo $this->getName() . " borrowed '" . $book->getTitle() . "'\n" ;
          }
-         else " No copies available for ' ".$book->getTitlee();
+         else {
+            //comment out to output look the same
+           // echo " No copies available for ' " .$book->getTitlee();
+         }
     }
 
 
